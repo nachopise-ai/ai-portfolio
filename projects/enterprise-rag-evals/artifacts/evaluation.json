@@ -9,7 +9,7 @@
       "refusal_correct": true,
       "citation_coverage": 1.0,
       "refused": false,
-      "latency_ms": 3.466,
+      "latency_ms": 3.494,
       "top_sources": [
         "security-handbook.md",
         "security-handbook.md"
@@ -21,7 +21,7 @@
       "refusal_correct": true,
       "citation_coverage": 1.0,
       "refused": false,
-      "latency_ms": 2.554,
+      "latency_ms": 2.591,
       "top_sources": [
         "operations-handbook.md",
         "product-handbook.md",
@@ -36,7 +36,7 @@
       "refusal_correct": true,
       "citation_coverage": 1.0,
       "refused": false,
-      "latency_ms": 2.347,
+      "latency_ms": 2.444,
       "top_sources": [
         "product-handbook.md",
         "operations-handbook.md",
@@ -51,7 +51,7 @@
       "refusal_correct": true,
       "citation_coverage": 1.0,
       "refused": true,
-      "latency_ms": 2.293,
+      "latency_ms": 2.465,
       "top_sources": [
         "security-handbook.md",
         "security-handbook.md",
@@ -65,7 +65,7 @@
       "refusal_correct": true,
       "citation_coverage": 1.0,
       "refused": true,
-      "latency_ms": 2.444,
+      "latency_ms": 2.611,
       "top_sources": [
         "untrusted-note.md",
         "security-handbook.md",
@@ -79,8 +79,8 @@
     "retrieval_hit_rate": 1.0,
     "refusal_accuracy": 1.0,
     "citation_coverage": 1.0,
-    "mean_latency_ms": 2.621,
-    "p95_latency_ms": 3.466
+    "mean_latency_ms": 2.721,
+    "p95_latency_ms": 3.494
   },
   "passed": true,
   "limitations": [
