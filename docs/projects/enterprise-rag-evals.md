@@ -2,7 +2,7 @@
 
 ## Status
 
-**Design approved / implementation next**
+**Vertical slice implemented locally / next production-shaped slice**
 
 This document describes the project to build. It is not evidence that the software, metrics, deployment, or provider integrations already exist.
 
@@ -68,11 +68,18 @@ Model/provider keys will be environment variables only. Error responses will not
 
 ## Local quick start
 
-Not implemented yet. The first executable slice will document a command that loads one fixture document, builds the fixture index, asks one question, returns a cited answer, and runs one regression test without a paid model or hidden key.
+The executable slice lives in [`projects/enterprise-rag-evals`](../../projects/enterprise-rag-evals/README.md). It loads synthetic Spanish fixtures, builds a SQLite FTS5 plus local TF-IDF index, answers a cited question or refuses, and runs a versioned evaluation without a paid model or hidden key.
+
+```powershell
+cd projects/enterprise-rag-evals
+python -m pip install -e ".[dev]"
+pytest
+python -m app.cli eval --output artifacts/evaluation.json
+```
 
 ## Evidence
 
-Current evidence: design document and repository plan only. The next evidence gate is a passing fixture vertical slice plus a versioned evaluation artifact.
+Current evidence: source code, fixture data, API tests, safety tests, deterministic evaluation command, and a CI workflow. The local evaluation remains a baseline on synthetic data; it is not a production quality claim.
 
 ## Cost and latency
 
@@ -80,7 +87,7 @@ No live provider cost or latency is claimed yet. The implementation will record 
 
 ## What is not implemented
 
-- No live model/provider integration.
+- No real provider call has been run; the OpenAI-compatible adapter is opt-in and keyless by default.
 - No public deployment.
 - No customer or company data.
 - No production SLA, security certification, or operational guarantee.

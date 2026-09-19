@@ -14,9 +14,11 @@ Mi objetivo es convertir problemas de negocio en sistemas de software con IA que
 
 ### [Enterprise RAG Evals](docs/projects/enterprise-rag-evals.md)
 
-**Estado:** diseño aprobado · implementación siguiente
+**Estado:** vertical slice implementado localmente · evaluación y API verificadas
 
 Un sistema documental en español que ingiere información, recupera evidencia, responde con citas y mide cuándo debe negarse a contestar. El proyecto está pensado para demostrar ingeniería de backend, retrieval, evaluación, observabilidad y seguridad.
+
+Código ejecutable: [`projects/enterprise-rag-evals`](projects/enterprise-rag-evals/README.md).
 
 ## What I prove
 

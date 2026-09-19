@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+*.egg-info/
 
 # JavaScript/build output
 node_modules/
@@ -23,6 +24,8 @@ build/
 # Local data and runtime artifacts
 data/local/
 volumes/
+var/
+artifacts/*.sqlite3
 coverage.xml
 htmlcov/
 

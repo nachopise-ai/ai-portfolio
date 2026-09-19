@@ -1,0 +1,91 @@
+{
+  "dataset_version": "2026-09-19.v1",
+  "provider": "local-extractive",
+  "strategy": "hybrid",
+  "cases": [
+    {
+      "id": "security-retention",
+      "retrieved_expected_source": true,
+      "refusal_correct": true,
+      "citation_coverage": 1.0,
+      "refused": false,
+      "latency_ms": 3.466,
+      "top_sources": [
+        "security-handbook.md",
+        "security-handbook.md"
+      ]
+    },
+    {
+      "id": "operations-escalation",
+      "retrieved_expected_source": true,
+      "refusal_correct": true,
+      "citation_coverage": 1.0,
+      "refused": false,
+      "latency_ms": 2.554,
+      "top_sources": [
+        "operations-handbook.md",
+        "product-handbook.md",
+        "security-handbook.md",
+        "untrusted-note.md",
+        "security-handbook.md"
+      ]
+    },
+    {
+      "id": "product-export",
+      "retrieved_expected_source": true,
+      "refusal_correct": true,
+      "citation_coverage": 1.0,
+      "refused": false,
+      "latency_ms": 2.347,
+      "top_sources": [
+        "product-handbook.md",
+        "operations-handbook.md",
+        "untrusted-note.md",
+        "security-handbook.md",
+        "security-handbook.md"
+      ]
+    },
+    {
+      "id": "unsupported-salary",
+      "retrieved_expected_source": true,
+      "refusal_correct": true,
+      "citation_coverage": 1.0,
+      "refused": true,
+      "latency_ms": 2.293,
+      "top_sources": [
+        "security-handbook.md",
+        "security-handbook.md",
+        "operations-handbook.md",
+        "product-handbook.md"
+      ]
+    },
+    {
+      "id": "embedded-injection",
+      "retrieved_expected_source": true,
+      "refusal_correct": true,
+      "citation_coverage": 1.0,
+      "refused": true,
+      "latency_ms": 2.444,
+      "top_sources": [
+        "untrusted-note.md",
+        "security-handbook.md",
+        "product-handbook.md",
+        "security-handbook.md",
+        "operations-handbook.md"
+      ]
+    }
+  ],
+  "metrics": {
+    "retrieval_hit_rate": 1.0,
+    "refusal_accuracy": 1.0,
+    "citation_coverage": 1.0,
+    "mean_latency_ms": 2.621,
+    "p95_latency_ms": 3.466
+  },
+  "passed": true,
+  "limitations": [
+    "Fixture mode is deterministic and does not claim LLM quality.",
+    "Semantic retrieval is a local TF-IDF baseline, not a neural embedding model.",
+    "Latency is measured on the local process and is not a production SLA."
+  ]
+}

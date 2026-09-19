@@ -1,0 +1,7 @@
+.git
+.pytest_cache
+.ruff_cache
+.venv
+var
+artifacts/*.json
+tests

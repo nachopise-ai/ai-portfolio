@@ -16,9 +16,11 @@ La regla de este portfolio es profundidad antes que cantidad: **No se añade otr
 
 **Objetivo:** convertir `enterprise-rag-evals` en software ejecutable sin depender de una clave de pago.
 
-**Artifact:** fixture document -> ingestion validada -> índice fixture -> pregunta -> respuesta con cita o rechazo -> test de regresión.
+**Artifact:** [fixture document -> ingestion validada -> índice fixture -> pregunta -> respuesta con cita o rechazo -> test de regresión](projects/enterprise-rag-evals/README.md).
 
 **Evidence required:** tests de ingestión y retrieval, un caso de respuesta grounded, un caso de rechazo y un artefacto de evaluación versionado.
+
+**Estado actual:** implementado localmente y cubierto por pytest, evaluación versionada, API FastAPI y workflow de CI. Las métricas se refieren únicamente al dataset sintético incluido.
 
 **Interview question enabled:** “¿Cómo sabes que tu RAG recupera la información correcta y no solo produce una respuesta convincente?”
 

@@ -1,0 +1,32 @@
+name: enterprise-rag-evals
+
+on:
+  push:
+    paths:
+      - "projects/enterprise-rag-evals/**"
+      - ".github/workflows/enterprise-rag-evals.yml"
+  pull_request:
+    paths:
+      - "projects/enterprise-rag-evals/**"
+      - ".github/workflows/enterprise-rag-evals.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/enterprise-rag-evals
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: projects/enterprise-rag-evals/pyproject.toml
+      - run: python -m pip install -e ".[dev]"
+      - run: ruff check app tests
+      - run: pytest
+      - run: python -m app.cli eval --output artifacts/evaluation.json

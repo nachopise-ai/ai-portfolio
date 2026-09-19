@@ -4,7 +4,7 @@ El catálogo separa el valor profesional que debe demostrar cada proyecto de su 
 
 | Project | Role signal | Status | Evidence | Next gate |
 | --- | --- | --- | --- | --- |
-| `enterprise-rag-evals` | RAG, backend, evaluación, seguridad, observabilidad | Design approved | [Project brief](docs/projects/enterprise-rag-evals.md) | Implement fixture vertical slice |
+| `enterprise-rag-evals` | RAG, backend, evaluación, seguridad, observabilidad | Locally verified vertical slice | [Project README](projects/enterprise-rag-evals/README.md) · [brief](docs/projects/enterprise-rag-evals.md) | Add neural embeddings and PostgreSQL/pgvector comparison |
 | `agentops-ticket-resolver` | Tool use, approvals, reliability, auditability | Planned | Design only | Define tool contract after flagship baseline |
 | `document-intelligence-es` | OCR, extraction, validation, human review | Planned | Design only | Select public/synthetic document set |
 | `mlops-forecasting` | Classical ML, API serving, drift, retraining | Planned | Design only | Choose a reproducible public dataset |
