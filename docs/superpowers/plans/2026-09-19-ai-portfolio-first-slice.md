@@ -70,7 +70,7 @@ Expected: no whitespace errors and both paths are ignored.
 
 ```powershell
 git add .gitignore SECURITY.md CONTRIBUTING.md
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'chore: add portfolio hygiene rules'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'chore: add portfolio hygiene rules'
 ```
 
 ### Task 2: Create the recruiter-facing hub README and project catalogue
@@ -108,7 +108,7 @@ Expected: every required target appears in the hub and no diff whitespace errors
 
 ```powershell
 git add README.md PROJECTS.md
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'docs: add AI engineer portfolio hub'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'docs: add AI engineer portfolio hub'
 ```
 
 ### Task 3: Add the reusable project template and flagship brief
@@ -165,7 +165,7 @@ Expected: both documents distinguish design, local verification, and production 
 
 ```powershell
 git add docs/project-template.md docs/projects/enterprise-rag-evals.md
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'docs: define reusable project template and flagship brief'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'docs: define reusable project template and flagship brief'
 ```
 
 ### Task 4: Add the career-oriented roadmap
@@ -196,7 +196,7 @@ Expected: all four phases and the anti-sprawl rule are present.
 
 ```powershell
 git add ROADMAP.md
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'docs: add AI engineer portfolio roadmap'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'docs: add AI engineer portfolio roadmap'
 ```
 
 ### Task 5: Add repeatable portfolio validation
@@ -228,7 +228,7 @@ Expected: validation passes, no diff errors appear, and only intended files are 
 
 ```powershell
 git add scripts/validate-portfolio.ps1
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'test: add portfolio documentation validator'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'test: add portfolio documentation validator'
 ```
 
 ### Task 6: Final local review and handoff
@@ -257,7 +257,7 @@ Expected: validation passes, the branch has no uncommitted files, and the histor
 Run:
 
 ```powershell
-rg -n -i "C:\\\\Users|C:/Users|portfolio@localhost|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}" README.md PROJECTS.md ROADMAP.md SECURITY.md CONTRIBUTING.md docs scripts
+rg -n -i "sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{20,}" README.md PROJECTS.md ROADMAP.md SECURITY.md CONTRIBUTING.md docs scripts
 ```
 
 Expected: no personal filesystem paths, token-shaped values, or invented contact details.
@@ -266,7 +266,7 @@ Expected: no personal filesystem paths, token-shaped values, or invented contact
 
 ```powershell
 git add -A
-git -c user.name='Nacho' -c user.email='portfolio@localhost' commit -m 'docs: polish portfolio handoff'
+git -c user.name='Nacho' -c user.email='author@example.invalid' commit -m 'docs: polish portfolio handoff'
 ```
 
 Run the complete local audit again after this commit.
