@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# JavaScript/build output
+node_modules/
+dist/
+build/
+.next/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data and runtime artifacts
+data/local/
+volumes/
+coverage.xml
+htmlcov/
+
+# SDD execution workspace
+.superpowers/sdd/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
